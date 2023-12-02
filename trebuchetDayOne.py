@@ -27,11 +27,10 @@ print(trebuchet(arr))'''
 sum = 0
 import re
 with open('trebuchetPuzzleInput.txt', 'r') as file:
-    puzzle_input = file.read()
+    puzzle_input = file.read().split('\n')
 
 for line in puzzle_input:
-    digits = re.findall(r'\d+', puzzle_input)
-    first = digits[0]
-    last = digits[-1]
-    double_digits = str(first) + str(last)
-    sum += int(double_digits)
+    digits = re.findall(r'\d+', line)
+    sum += int(digits[0] + digits[-1])
+
+print(sum)
