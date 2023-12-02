@@ -5,7 +5,7 @@
 # append two-digit num into a sum
 # return sum
 
-def trebuchet(arr):
+'''def trebuchet(arr):
     sum = 0
     digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
@@ -22,4 +22,4 @@ def trebuchet(arr):
     return sum
 
 arr = ['1abc2', 'pqr3stu8vwx', 'a1b2c3d4e5f', 'treb7uchet'] # output 142
-print(trebuchet(arr))
+print(trebuchet(arr))'''
