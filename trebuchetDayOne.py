@@ -23,3 +23,14 @@
 
 arr = ['1abc2', 'pqr3stu8vwx', 'a1b2c3d4e5f', 'treb7uchet'] # output 142
 print(trebuchet(arr))'''
+
+sum = 0
+import re
+f = open("trebuchet.txt", "r")
+for line in f:
+    digits = re.findall(r'\d+', f)
+    first = digits[0]
+    last = digits[-1]
+    double_digits = str(first) + str(last)
+    sum += int(double_digits)
+f.close
