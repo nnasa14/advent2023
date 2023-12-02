@@ -26,11 +26,12 @@ print(trebuchet(arr))'''
 
 sum = 0
 import re
-f = open("trebuchet.txt", "r")
-for line in f:
-    digits = re.findall(r'\d+', f)
+with open('trebuchetPuzzleInput.txt', 'r') as file:
+    puzzle_input = file.read()
+
+for line in puzzle_input:
+    digits = re.findall(r'\d+', puzzle_input)
     first = digits[0]
     last = digits[-1]
     double_digits = str(first) + str(last)
     sum += int(double_digits)
-f.close
